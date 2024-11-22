@@ -10,4 +10,7 @@ export class CreatePurchasesDto {
     @IsNotEmpty()
     paymentMethod: string;
 
+    @IsString()
+    @IsNotEmpty()
+    customer: string;
 }
